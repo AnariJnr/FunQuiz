@@ -13,6 +13,8 @@ let navigation2 = document.querySelector(".navigation2");
 let navigation1 = document.querySelector(".navigation1");
 let navigation3 = document.querySelector(".navigation3");
 let navigation4 = document.querySelector(".navigation4");
+let setOrEditWrapper = document.querySelector(".setOrEditWrapper");
+
 // navs
 toggle.addEventListener("click", function () {
     circleX.classList.toggle("none");
@@ -260,8 +262,8 @@ submit.addEventListener("click", function(){
       
     });
 
-     navigation4.classList.toggle("showLinks2");
-  navigation4.classList.toggle("theOverflowY");
+     navigation4.classList.add("showLinks2");
+  navigation4.classList.add("theOverflowY");
   
   
 
@@ -326,6 +328,7 @@ deleteBtn.addEventListener("click",function(){
 
    displayQuestions(allQuestions);
    displayAlert("Question deleted","danger");
+   deleteBtnTextField.value = "";
   }
     
     
@@ -349,6 +352,7 @@ editBtn.addEventListener("click",function(){
      }
  });
  
+ setOrEditWrapper.classList.remove("hide");
  editHolder = editItem;
  mainQuestion.value = editHolder.mainQuestion;
  questionOptionA.value = editHolder.optionA;
@@ -356,6 +360,7 @@ editBtn.addEventListener("click",function(){
  questionOptionC.value = editHolder.optionC;
  editFlag = true;
  setQuestionBtn.textContent = "Edit Question";
+ editBtnTextField.value = "";
   }
 
   
