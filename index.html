@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exams</title>
+  </head>
+  <body>
+    <header>
+      <div class="toggleContainer">
+        <div class="toggle">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-circle-xmark none"></i>
+          <h1>Ryuzaki Fun Quiz</h1>
+        </div>
+
+        <div class="toggle2">
+          <i class="fa-solid fa-question"></i>
+          <p>Picks</p>
+        </div>
+      </div>
+
+      <div class="toggle3">
+        <i class="fa-solid fa-book-open-reader"></i>
+        <p>Hints</p>
+      </div>
+    </div>
+
+      <ul class="navigation">
+        <li><a href="#">Duration</a></li>
+        <li><a href="#">2Hours</a></li>
+        <li>
+          <a href="https://www.Instagram.com/iam.ryuzakii?r=nametag"
+            >Instagram</a
+          >
+        </li>
+        <li><a href="#">Help</a></li>
+      </ul>
+
+      <div class="navigation1">
+       
+        <div id="section-center">
+          <p class="alert"></p>
+
+          <!-- subject name -->
+          <div class="subjectName">
+            <h3>Suject Name <i class="fa-solid fa-chevron-down"></i></h3>
+            <div class="subjectWrapper hide">
+              <p class="theSubject" >
+                <input
+                  type="text"
+                  placeholder="Enter Suject name"
+                  class="sbj"
+                />
+              </p>
+
+              <button class="subjectBtn">Subject Name</button>
+            </div>
+            <hr>
+              <hr>
+          </div>
+          <!-- set or edit questions -->
+          <div class="setOrEdit">
+            <h1>
+              Set or Edit Questions
+              <i class="fa-solid fa-chevron-down"></i>
+            </h1>
+            <div class="setOrEditWrapper hide">
+              <p class="mainQuestion">
+                <input type="text" placeholder="Enter Question" />
+              </p>
+
+              <p class="questionOptionA">
+                <input
+                  type="text"
+                  placeholder="Enter Option A"
+                  class="optionA"
+                />
+              </p>
+
+              <p class="questionOptionB">
+                <input
+                  type="text"
+                  placeholder="Enter Option B"
+                  class="optionB"
+                />
+              </p>
+
+              <p class="questionOptionC">
+                <input
+                  type="text"
+                  placeholder="Enter Option C"
+                  class="optionC"
+                />
+              </p>
+
+              <button class="setQuestion">Set Question</button>
+            </div>
+            <hr>
+            <hr>
+          </div>
+
+          <!-- marking scheme -->
+          <div class="markingScheme">
+            <h1>Marking Scheme <i class="fa-solid fa-chevron-down"></i></h1>
+            <div class="markingSchemeWraper hide">
+              <p class="allAnswers">
+                <input
+                  type="text"
+                  placeholder="Enter Answers"
+                  class="answerScheme"
+                />
+              </p>
+
+              <button class="setAnswer">Set Answer</button>
+            </div>
+            <hr>
+              <hr>
+          </div>
+
+          <!-- delete section -->
+          <div class="deleteSection">
+            <h1>Delete Question <i class="fa-solid fa-chevron-down"></i></h1>
+            <div class="deleteSectionWrapper hide">
+              <p class="deleteAQuestion">
+                <input
+                  type="number"
+                  placeholder="Enter Number"
+                  class="deleteScheme"
+                />
+              </p>
+              <button class="deleteQuestion">delete question</button>
+            </div>
+            <hr>
+              <hr>
+          </div>
+
+          <!-- edit sec -->
+          <div class="editContainer">
+            <h1>Edit Question <i class="fa-solid fa-chevron-down"></i></i></h1>
+            <div class="editWraper hide">
+              <p class="editAQuestion">
+                <input
+                  type="number"
+                  placeholder="Enter Number"
+                  class="editSection"
+                />
+              </p>
+              <button class="editQuestion">Edit question</button>
+            </div>
+          </div>
+          <hr>
+              <hr>
+        </div>
+      </div>
+
+      <ul class="navigation3">
+        <li><a href="#">Exam Answers Appear Here!!!</a></li>
+      </ul>
+
+      <ul class="navigation4">
+        <li><a href="#">You scored </a></li>
+       
+      </ul>
+
+    </header>
+
+    <!-- main -->
+
+    <article class="article">
+      <div class="questionsContainer">
+        <!-- <div class="questionBox">
+          <p class="question"><span class="number">1.</span> Who is a dog?</p>
+          <p class="option">
+            <input type="radio" class="radioSpace" name="question1" />wee
+          </p>
+          <p class="option">
+            <input type="radio" class="radioSpace" name="question1" /> A dog
+          </p>
+          <p class="option">
+            <input type="radio" class="radioSpace" name="question1" />red
+          </p>
+        </div>
+
+        <div class="questionBox">
+          <p class="question"><span class="number">2.</span> Who is a cat?</p>
+          <p class="option">
+            <input type="radio" class="radioSpace" name="question2" />quincy
+          </p>
+          <p class="option">
+            <input type="radio" class="radioSpace" name="question2" />hello
+          </p>
+          <p class="option">
+            <input type="radio" class="radioSpace" name="question2" />ooop
+          </p>
+        </div> -->
+      </div>
+      <button class="submit">Submit</button>
+    </article>
+
+    <div class="end">
+      <p class="Copyright">© <span></span> AnariJnr @iam.ryuzaki</p>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
